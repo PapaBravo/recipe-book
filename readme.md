@@ -1,4 +1,6 @@
-# Local development
+# Recipe Book
+
+## Local development
 * create volumes with 
 ```sh
 docker volume create mongodbdata
