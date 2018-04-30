@@ -1,3 +1,7 @@
 # Local development
-* create local volume with `docker volume create mongodbdata`
+* create volumes with 
+```sh
+docker volume create mongodbdata
+docker volume create recipe-data
+```
 * Run `docker-compose up --build`

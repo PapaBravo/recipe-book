@@ -13,6 +13,8 @@ services:
       - "3000:3000" #specify ports forewarding
     links:
       - database # link this service to the database service
+    volumes: 
+      - recipe-data:/data
 
   database: # name of the third service
     image: mongo # specify image to build container from
@@ -25,3 +27,6 @@ volumes:
     mongo-data:
         external:
           name: mongodbdata
+    recipe-data:
+        external:
+          name: recipe-data
