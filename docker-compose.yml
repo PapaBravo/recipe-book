@@ -15,14 +15,6 @@ services:
       - database # link this service to the database service
     volumes: 
       - recipe-data:/data
-
-  database: # name of the third service
-    image: mongo # specify image to build container from
-    volumes: 
-      - mongo-data:/data/db
-    ports:
-      - "27017:27017" # specify port forewarding
   
 volumes:
-    mongo-data:
     recipe-data:
